@@ -83,25 +83,19 @@ $(".GaugeMeter3").gaugeMeter({
             label: '전체',
             data: [100,100,100,100,100], 
             borderWidth: 1,
-            borderColor:'#ececec',
+            borderColor:'transparent',
             fill:true,
             backgroundColor: [
-              'rgba(236,236,236,0.3)',
-              'rgba(236,236,236,0.3)',
-              'rgba(236,236,236,0.3)',
-              'rgba(236,236,236,0.3)', 
+              'rgba(236,236,236,0.5)'
             ],   }, 
             {
             label: '진척도',
             data: [60,80,60, 40, 40], 
             borderWidth: 1,
-            borderColor:'#ececec',
+            borderColor:'rgba(106,242,136,0.8)',
             fill:true,
             backgroundColor: [
-              'rgba(106,242,136,0.7)',
-              'rgba(106,242,136,0.8)',
-              'rgba(106,242,136,0.8)',
-              'rgba(106,242,136,0.8)',  
+              'rgba(106,242,136,0.8)'
             ],   }, 
           ]
           },

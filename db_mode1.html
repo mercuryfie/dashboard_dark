@@ -23,17 +23,16 @@
         href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Barlow:wght@600&family=Saira+Extra+Condensed:wght@500&display=swap"
         rel="stylesheet"> 
     <!-- css ----------------------------  -->
-    <link rel="stylesheet" href="./css/reset.css"> 
-    <link rel="stylesheet" href="./css/db_mode1.css">
-    <!-- <link rel="stylesheet" href="./css/flipcard_dark.css"> -->
-    <!--  js ----------------------------  -->
-    <!-- <script src="./js/animation.js"></script> -->
+    <link rel="stylesheet" href="./css/reset.css">  
+    <link rel="stylesheet" href="./css/db_main.css"> 
+    <!-- <link rel="stylesheet" href="./css/db_mode1.css"> -->
+     
+    <!--  js ----------------------------  --> 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="./js/jQuery v3.7.1.js"></script>
     <script src="./js/GaugeMeter.js"></script> 
     <script src="./js/flipcard_dark.js"></script>
-    <script src="./js/mode1.js"></script>  
-
+    <script src="./js/mode1.js"></script>   
 </head>
 <body> 
     <div id="wrap">
@@ -91,10 +90,9 @@
                         ></div>  
                       </div>   
                 </div>
-                <div class="mbox1-2">
-                    <!-- <p>logo1-2</p> -->
+                <div class="mbox1-4"> 
                     <p>조제대 동작 현황</p>
-                    <div class="mbox1-2-1">
+                    <div class="mbox1-4-1">
                         <div class="status">
                             <div class="status1-1">
                                 <div class="statuscircle on"></div>
@@ -108,9 +106,8 @@
                                 <div class="statuscircle standby"></div>
                                 <p>대기</p>
                             </div> 
-                        </div> 
-                        <!-- <object data="./meter/pot_now_mode1.html" type=""></object> -->
-                        <div class="wrapper">
+                        </div>  
+                        <div class="babywrap">
                             <div class="statusbox onmode"></div>
                             <div class="statusbox onmode"></div>
                             <div class="statusbox onmode"></div>
@@ -171,11 +168,7 @@
                             <div class="statusbox onmode"></div>  
                             <div class="statusbox standbymode"></div>
                             <div class="statusbox standbymode"></div>   -->
-                        </div>
-                        <!-- <div class="pagebox">
-                            <div class="pages"></div>
-                            <div class="pages"></div>
-                        </div> -->
+                        </div> 
                     </div> 
                 </div>
             </div>
@@ -456,7 +449,7 @@
                         <div class="pages"></div>
                     </div>
                 </div> 
-                <div class="mbox3-2"> 
+                <div class="mbox3-4"> 
                     <p>택배 마감까지 남은 시간</p>  
                     <div class="clockbox">
                         <div class="clockbox1-1"> <p>로젠</p>
@@ -566,42 +559,41 @@
             </div>  
         </main>
         <section class="footer"> 
-                <div class="fbox fbox1">
-                    <!-- <p>logo10</p> -->
-                    <p>전체 주문 대비 현재 작업량</p>
-                    <!-- <p>(단위:건)</p> -->
-                    <div class="bottombox1-1">
-                        <p>(단위:건)</p>
-                        <canvas id="leftChart"></canvas>
-                    </div>  
-                    <div class="cbox">
-                        <div class="fcbox fcbox1">
-                            <div class="fcircle fcircle1"></div>
-                            <p>전체 주문</p> 
-                        </div>
-                        <div class="fcbox fcbox2">
-                            <div class="fcircle fcircle2"></div>
-                            <p>현재 작업량</p>
-                        </div>
-                    </div>  
+            <div class="fbox fbox1"> 
+                <p>전체 주문 대비 현재 작업량</p> 
+                <div class="fbox1-1">
+                    <div class="fcbox fcbox1">
+                        <div class="fcircle fcircle1"></div>
+                        <p>전체 주문</p>
+                    </div>
+                    <div class="fcbox fcbox2">
+                        <div class="fcircle fcircle2"></div>
+                        <p>현재 작업량</p>
+                    </div>
                 </div>
-                <div class="fbox fbox2">
-                    <!-- <p>logo11</p> -->
-                    <p>조제대별 소요 시간</p>
-                    <!-- <p>(단위:min, 조제기 번호)</p> -->
-                    <div class="bottombox1-2">
-                        <p>(단위:min, 조제기 번호)</p>
-                        <canvas id="presChart"></canvas>
-                    </div>  
-                    <div class="cbox">
-                        <div class="fcbox fcbox1">
-                            <div class="fcircle fcircle1"></div><p>평균 소요 시간</p> 
-                        </div>
-                        <div class="fcbox fcbox2">
-                            <div class="fcircle fcircle3"></div><p>조제대별 소요 시간</p>
-                        </div>
-                    </div>  
+                <div class="fbox1-2">
+                    <p>(단위:건)</p>
+                    <canvas id="leftChart"></canvas>
+                </div>   
+            </div> 
+            <div class="fbox fbox2">
+                <!-- <p>logo11</p> -->
+                <p>조제대별 소요 시간</p> 
+                <div class="fbox1-2">
+                    <p>(단위:min, 조제기 번호)</p>
+                    <canvas id="presChart"></canvas>
+                </div>  
+                <div class="fbox1-1">
+                    <div class="fcbox fcbox1">
+                        <div class="fcircle fcircle1"></div>
+                        <p>평균 소요 시간</p>
+                    </div>
+                    <div class="fcbox fcbox2">
+                        <div class="fcircle fcircle3"></div>
+                        <p>평균 소요 시간</p>
+                    </div>
                 </div> 
+            </div> 
         </section>
         </div> 
     </div>    
