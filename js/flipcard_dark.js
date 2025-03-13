@@ -94,8 +94,8 @@ function animate(currentTime) {
   flipper.classList.add('flipping');
   requestAnimationFrame(animate);
 }
-
+/* 
 // 애니메이션 실행 예시
 document.querySelectorAll('.flipper').forEach(flipper => {
   flipper.addEventListener('click', () => flipAnimation(flipper));
-});
+}); */

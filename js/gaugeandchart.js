@@ -73,7 +73,7 @@ $(".GaugeMeter3").gaugeMeter({
     color: '#6AF288',
   });   
      
-  //bar chart 전체진척도
+  //bar chart 전체 진척도
   const ctx = document.getElementById('barChart');    
         new Chart(ctx, {
           type: 'bar', 
@@ -81,7 +81,7 @@ $(".GaugeMeter3").gaugeMeter({
             labels: ['전체','조제','탕전','마킹', '포장'],
             datasets: [{
             label: '전체',
-            data: [100,100,100,100,100], 
+            data: [600,200,100,100,100], 
             borderWidth: 1,
             borderColor:'transparent',
             fill:true,

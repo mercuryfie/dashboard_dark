@@ -426,7 +426,8 @@ main {
     justify-content: center;
 
   }
-  .GaugeMeter3 {
+  .GaugeMeter3 { 
+    height: 110px;
     margin-right: 10px;
     margin-left: 10px;
     position: Relative;
@@ -462,6 +463,19 @@ main {
     white-space: NoWrap;
     z-index: 1;
   }
+  .line1-1 {
+    border-radius: 5px;
+    width: 40px;
+    height: 20px;
+    background-color: #ececec21;
+    position: absolute;
+    bottom:5px;
+    left:50%;
+    font-size: 14px;
+    transform: translateX(-50%);
+    color:white;
+  }
+ 
 /* main box -area2 --------------------------------- */
 
 .mbox2  {
@@ -520,7 +534,8 @@ main {
     margin-top: 30px;
     margin-left: 10px;
   }
-  .GaugeMeter7 {
+  .GaugeMeter7 { 
+    height: 110px;
     margin-right: 0px;
     margin-left: 0px;
     position: Relative;
@@ -568,6 +583,7 @@ main {
 
   }
   .GaugeMeter8 {
+    height: 110px;
     margin-right: 10px;
     margin-left: 0px;
     position: Relative;
@@ -642,6 +658,7 @@ main {
 
 .cardbox1, .cardbox2 {
   display: flex;
+  margin-top: 20px;
 }
 .cardbox1-1,
 .cardbox1-2,
@@ -901,6 +918,7 @@ main {
     height: 190px;
     border:1px solid #ececec81;
     margin-bottom: 10px;
+    position: relative;
 }
 .mbox3-2 {
     width:460px;
@@ -922,10 +940,18 @@ main {
 
 /* 탕전 주문 건수, 예비조제 주문건수 */
 /* 주간그래프 */
-.weekbox {
-  margin-top: -25px;
-  margin-left: 80px;
-  width:260px;
+.weekbox { 
+  width:220px;
+  position: absolute;
+  top:30px;
+  left: 50%;
+  transform: translateX(-50%);
+
+}
+.mbox3-1 .status {
+  position: absolute;
+  top:60px;
+  left: 40px;
 
 }
 /* weekly의 pagebox */
@@ -999,14 +1025,15 @@ main {
     display: flex;
 }
 .pages {
-    width: 10px;
+    width: 20px;
     height: 5px;
-    border-radius: 3px;
-    border: 1px solid #ececec;
-    margin-right: 10px;
+    border-radius: 5px;
+    border: 1px solid #ececec81;
+    margin-right: 15px;
 }
 .pages:nth-child(1) {
-    background-color: #fff;
+    background-color: #A698FF;
+    border: 1px solid #A698FF;
 }
 
 /* 택배 마감 시간, flipcard*/
@@ -1231,7 +1258,7 @@ main {
     right: 20px;
 }
 .parbox {
-    margin-top: 40px;
+    margin-top: 20px;
     margin-left: 40px;
     width: 360px;
     height: 120px;
@@ -1242,9 +1269,9 @@ main {
   }
 
   .GaugeMeter5,
-  .GaugeMeter6 {
-    margin-right: 10px;
-    margin-left: 0px;
+  .GaugeMeter6 { 
+    height: 110px;
+    margin-right: 10px; 
     position: Relative;
     text-align: Center;
     overflow: Hidden;

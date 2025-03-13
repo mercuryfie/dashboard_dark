@@ -775,9 +775,9 @@ height: 400px;
 }
 .pages {
   width: 10px;
-  height: 5px;
-  border-radius: 3px;
-  border: 1px solid #ececec; 
+  height: 10px;
+  border-radius: 50%;
+  border: 1px solid #ececec;
   margin-right: 10px;
 }
 .pages:nth-child(1) {
